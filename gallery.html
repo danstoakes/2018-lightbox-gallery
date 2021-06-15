@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+<html lang = "en">
+
+<head>
+	<!-- Ensures the webpage content is not fixed size, and scales dynamically with the size of the display -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Specifying character encoding for the document/page -->
+	<meta charset="UTF-8">
+
+	<title>Photo Gallery (Lightbox)</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="modal" id="background">
+	</div>
+
+	<!-- Container for the Lightbox slideshow -->
+	<div class="outer foreground" id="lightbox-container">
+		<div class="middle">
+			<div class="inner full-width">
+				<div class="top modal-adjusted" id="backgroundtop">
+					<span class="close cursor" id="closeButton">&times;</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container for the image grid -->
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">
+				<div class="container" id="container">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/source.js"></script>
+</body>
+
+</html>
